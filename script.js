@@ -3,7 +3,7 @@ var botao = [0,0,0,0,0,0,0,0,0]
 var verificador = [false,false,false,false,false,false,false,false,false,]
 var luzes = document.getElementsByClassName('luzes')
 var luzes2 = document.getElementsByClassName('luzes2')
-
+var contador = 1
 
 //Aumenta valor dos botões
 function contagem(elem){
@@ -18,7 +18,9 @@ function contagem(elem){
 
 //Faz comparação entre resposta e solução
 function verifica(){
-    
+   var vezes = document.getElementById('vezes')
+   contador++
+   vezes.innerHTML = "0"+contador+"/10"
     for(i = 0;i<solucao.length;i++){
         if(botao[i] == solucao[i]){
                 verificador[i] = true

@@ -15,12 +15,12 @@
 }
 
 button{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin: 10px;
     font-family: 'ZCOOL QingKe HuangYou', cursive;
-    font-size:50px;
+    font-size:30px;
     transition-duration: 0.4s;   
     background-color: white;
     color: black;
@@ -66,8 +66,8 @@ div.botaolinha{
     border: solid 2px white;
     border-radius: 20%;
     margin: 2%;
-    height: 400px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     display: flex;
     justify-content: space-evenly;    
 
@@ -81,22 +81,22 @@ section{
 }
 
 .luzes{
-    width: 40px;
-    margin: 30px;
+    width: 25px;
+    margin: 25px;
 }
 .luzes2{
-    width: 40px;
-    margin: 30px;
+    width: 25px;
+    margin: 25px;
 }
 
 p{
-    font-size: 30px;
+    font-size: 20px;
     color: white;
 }
 
 h1{
     font-family: 'ZCOOL QingKe HuangYou', cursive;
-    font-size:60px;
+    font-size:40px;
     color: #F8F32B;
      
 }
@@ -109,6 +109,6 @@ header{
 
 #vezes{
     font-family: 'ZCOOL QingKe HuangYou', cursive;
-    font-size:120px;
+    font-size:80px;
     color: white;
 }
