@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Luzes</title>
+</head>
+<body>
+    <header>
+        <div>
+           <h1>JOGO DAS LUZES</h1>
+        </div>
+        
+    </header>
+    <main>
+            <section >
+                <div class="caixa">
+                    <div class="botaolinha">
+                        <button onclick="contagem(this)" id="bt0" class="btn">0</button>
+                        <button onclick="contagem(this)" id="bt1" class="btn">0</button>
+                        <button onclick="contagem(this)" id="bt2" class="btn">0</button>
+                    </div>
+                    <div class="botaolinha">
+                        <button onclick="contagem(this)" id="bt3" class="btn">0</button>
+                        <button onclick="contagem(this)" id="bt4" class="btn">0</button>
+                        <button onclick="contagem(this)" id="bt5" class="btn">0</button>
+                    </div>
+                    <div class="botaolinha">
+                        <button onclick="contagem(this)" id="bt6" class="btn">0</button>
+                        <button onclick="contagem(this)" id="bt7" class="btn">0</button>
+                        <button onclick="contagem(this)" id="bt8" class="btn">0</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <div class="botaolinha">
+                        <img src="./img/desligado.png" id="luz1" class="luzes">
+                        <img src="./img/desligado.png" id="luz2" class="luzes">
+                        <img src="./img/desligado.png" id="luz3" class="luzes">
+                    </div>
+                    <div class="botaolinha">
+                        <img src="./img/desligado.png" id="luz4" class="luzes">
+                        <img src="./img/desligado.png" id="luz5" class="luzes">
+                        <img src="./img/desligado.png" id="luz6" class="luzes">
+                    </div>
+                    <div class="botaolinha">
+                        <img src="./img/desligado.png" id="luz7" class="luzes">
+                        <img src="./img/desligado.png" id="luz8" class="luzes">
+                        <img src="./img/desligado.png" id="luz9" class="luzes">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="caixa">
+                    <div class="botaolinha">
+                        <img src="./img/desligado.png" id="luz1" class="luzes2">
+                        <img src="./img/desligado.png" id="luz2" class="luzes2">
+                        <img src="./img/desligado.png" id="luz3" class="luzes2">
+                    </div>
+                    <div class="botaolinha">
+                        <img src="./img/desligado.png" id="luz4" class="luzes2">
+                        <img src="./img/desligado.png" id="luz5" class="luzes2">
+                        <img src="./img/desligado.png" id="luz6" class="luzes2">
+                    </div>
+                    <div class="botaolinha">
+                        <img src="./img/desligado.png" id="luz7" class="luzes2">
+                        <img src="./img/desligado.png" id="luz8" class="luzes2">
+                        <img src="./img/desligado.png" id="luz9" class="luzes2">
+                    </div>
+                </div>
+                <div class="caixa">
+                    <p id=vezes >01/10</p>
+            </div>
+            </section>
+            
+    </main>
+    <footer>
+        <div id=confirmaFooter style="background-color:#2D3047 ; width: 100%; justify-content: center; display: flex; padding-bottom: 20px;">
+            <button id="confirma" onclick="verifica()">CONFIRMAR</button>
+        </div>
+        <div style="margin: 50px;">
+           <p> Desenvolvido por Milton César</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
