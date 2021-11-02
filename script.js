@@ -4,6 +4,9 @@ var verificador = [false,false,false,false,false,false,false,false,false,]
 var luzes = document.getElementsByClassName('luzes')
 var luzes2 = document.getElementsByClassName('luzes2')
 var contador = 1
+var btn = document.getElementsByClassName('btn')
+
+randomize()
 
 //Aumenta valor dos botões
 function contagem(elem){
@@ -19,8 +22,7 @@ function contagem(elem){
 //Faz comparação entre resposta e solução
 function verifica(){
    var vezes = document.getElementById('vezes')
-   contador++
-   vezes.innerHTML = "0"+contador+"/10"
+   
     for(i = 0;i<solucao.length;i++){
         if(botao[i] == solucao[i]){
                 verificador[i] = true
@@ -162,11 +164,31 @@ function verifica(){
             }
          }
      }
+     if (verificador[0] == true && verificador[1] == true && verificador[2] == true && verificador[3] == true && verificador[4] == true && verificador[5] == true && verificador[6] == true && verificador[7] == true && verificador[8] == true){
+      alert("Parabéns você venceu")
+      contador = 1
+      randomize()
+   }else{
+     if(contador >= 10){
+         contador = 1
+        alert("Você perdeu")
+        for(i=0;i<btn.length;i++){
+         btn[i].innerHTML = 0
+        }  
+        randomize()    
+     }else{
+       contador++
+     }
+     vezes.innerHTML = contador+"/10"
+     
+   }
 }
 
 //Ramdomiza os valores que se tornam solução
+function randomize(){
 for (i = 0; i<9; i++){
 solucao[i] = Math.floor(Math.random() * 10)
 }
 
 console.log(solucao)
+}
